@@ -1,4 +1,81 @@
 .homes {
-  background-color: $color-secondary;
   grid-column: center-start / center-end;
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+}
+
+.home {
+  background-color: $color-grey-light-1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3.5rem;
+
+  &__img {
+    width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 1;
+  }
+
+  &__like {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-self: end;
+    margin: 1rem;
+    fill: $color-primary;
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 2;
+  }
+
+  &__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+
+    width: 80%;
+    font-family: $font-display;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: $color-secondary;
+    color: #fff;
+    z-index: 3;
+    transform: translateY(50%);
+  }
+
+  // Shitty solution
+  &__location,
+  &__rooms {
+    margin-top: 2.5rem;
+  }
+
+  &__location,
+  &__rooms,
+  &__area,
+  &__price {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    svg {
+      fill: $color-primary;
+      width: 2rem;
+      height: 2rem;
+      // margin-right: 1rem; // Used gap on parent element instead
+    }
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
+  }
 }

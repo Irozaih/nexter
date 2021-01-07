@@ -13,10 +13,23 @@
     </head>
     <body class="container">
         <div class="sidebar">
-            Sidebar
+            <div class="navigation__container">
+                <button class="navigation__button js-toggle-nav">
+                    <span class="navigation__button__line"></span>
+                </button>
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item js-toggle-nav"><a href="#home" class="navigation__link">Home</a></li>
+                        <li class="navigation__item js-toggle-nav"><a href="#features" class="navigation__link">Features</a></li>
+                        <li class="navigation__item js-toggle-nav"><a href="#testimonials" class="navigation__link">Testimonials</a></li>
+                        <li class="navigation__item js-toggle-nav"><a href="#real_estates" class="navigation__link">Real estates</a></li>
+                        <li class="navigation__item js-toggle-nav"><a href="#gallery" class="navigation__link">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
-        <header class="header">
+        <header id="home" class="header">
             Header
         </header>
 
@@ -24,7 +37,7 @@
             Top 3 realtors
         </div>
 
-        <section class="features">
+        <section id="features" class="features">
             <div class="feature">
                 <svg class="feature__icon">
                     <use xlink:href="img/sprite.svg#icon-global"></use>
@@ -69,7 +82,7 @@
             </div>
         </section>
 
-        <div class="story__pictures">
+        <div id="testimonials" class="story__pictures">
             <img src="img/story-1.jpeg" alt="Couple with new house" class="story__img--1">
             <img src="img/story-2.jpeg" alt="New house" class="story__img--2">
         </div>
@@ -83,7 +96,7 @@
             <button class="btn">Find your own home</button>
         </div>
 
-        <section class="homes">
+        <section id="real_estates" class="homes">
             <div class="home">
                 <img src="img/house-1.jpeg" alt="House 1" class="home__img">
                 <svg class="home__like">
@@ -283,7 +296,7 @@
             </div>
         </section>
 
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <figure class="gallery__item gallery__item--1"><img src="img/gal-1.jpeg" alt="Gallery image 1" class="gallery__img"></figure>
             <figure class="gallery__item gallery__item--2"><img src="img/gal-2.jpeg" alt="Gallery image 2" class="gallery__img"></figure>
             <figure class="gallery__item gallery__item--3"><img src="img/gal-3.jpeg" alt="Gallery image 3" class="gallery__img"></figure>
@@ -313,5 +326,8 @@
                 &copy; Copyright 2020 by Irozaih. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum sapiente dolor, incidunt soluta odit ipsum nihil facilis praesentium esse nobis.
             </p>
         </footer>
+
+        <!-- SCRIPTS -->
+        <script src="js/script.js"></script>
     </body>
 </html>

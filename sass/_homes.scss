@@ -1,6 +1,7 @@
 .homes {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
+  // margin: 15rem 0;
+  padding: 15rem 0; // Navigation positioning
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));

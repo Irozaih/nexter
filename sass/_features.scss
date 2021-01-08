@@ -19,7 +19,14 @@
   // grid-row-gap: 1.5rem;
   // grid-column-gap: 2.5rem;
   grid-gap: 1.5rem 2.5rem;
-  
+
+  /*-------------------------------------------------
+    - Use >>Progressive enhancement<< @supports
+    - Ignored by grid and flex:
+      01. Floats
+      02. display: inline-block and table-cell
+      03. vertical-align
+  -------------------------------------------------*/
 
   &__icon {
     fill: $color-primary;

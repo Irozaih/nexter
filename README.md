@@ -24,7 +24,7 @@ npm start
 - [Grid Layout](#grid-layout)
 - [SVG Icons](#svg-icons)
 - [Responsive Design](#responsive-design)
-- [NPM and NPM Scripts](npm-adn-npm-scripts)
+- [NPM and NPM Scripts](npm-and-npm-scripts)
 - [Cool Tools](#cool-tools)
 
 
@@ -54,20 +54,20 @@ CSS Grid Layout is the most powerful layout system available at the moment. It i
 
 We can see how powerful the CSS Grid is in the Gallery section example. It would be very hard to achieve this exact layout without the use of some JavaScript or libraries like [Masonry](https://masonry.desandro.com/). We can also see the `grid-gap` property in action, which makes the use of margin on child elements obsolete. However powerful the CSS Grid might be, there is always room for improvement. It would be nice if more browsers besides Firefox would adopt [`subgrid` value](https://caniuse.com/?search=subgrid "Can I use subgrid?"), as well as if we could set different row and column gaps, or have `nth` selector for rows and columns. One more thing would be enabling transitions when `grid-column` or `grid-row` values change. I hope that we will see this in the near future.
 
-![Grid: gallery](img/readme/gallery.png "Grid gallery")
+![Grid: Gallery section](img/readme/gallery.png "Grid: Gallery section")
 
 If you want to learn more about CSS Grid and how to incorporate these techniques in your own projects check out this awesome article on [CSS Tricks website](https://css-tricks.com/snippets/css/complete-guide-grid/ "A Complete Guide to Grid") and visit official documentation on [MND web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout "CSS Grid Layout").
 
 CSS Grid is supported in all major browsers except IE 9 and lower. *[See browser support for grid.](https://caniuse.com/?search=grid "Can I use grid?")*
 
-*P.S.: It's a good practice to name columns and keep in mind that you cannot use -1 on implicit grids :wink:*
+*PS: It's a good practice to name columns and keep in mind that you cannot use -1 on implicit grids :wink:*
 
 
 ## SVG Icons
 
 This project uses SVG sprite generated through [icomoon.app](https://icomoon.io/). SVG icons are then easily displayed with the help of `<use>` element:
 
-```xml
+```html
 <svg>
   <use xlink:href="img/sprite.svg#icon-key"></use>
 </svg>
@@ -84,7 +84,7 @@ This project utilizes **Desktop First** strategy. This means that we first write
 
 CSS Grid, like Flexbox, allows us to very easily make changes in a website layout. Even more so because we do not need to have additional container elements - we just have to add a new row or column and specify the area which element should occupy, *e.g.* sidebar navigation section. Besides this, CSS Grid has some lovely features which enable us to have responsive card layout without the use of media queries, *e.g.* features, real estates or footer section.
 
-```css
+```scss
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));

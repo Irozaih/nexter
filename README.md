@@ -24,7 +24,7 @@ npm start
 - [Grid Layout](#grid-layout)
 - [SVG Icons](#svg-icons)
 - [Responsive Design](#responsive-design)
-- [NPM and NPM Scripts](npm-and-npm-scripts)
+- [NPM and NPM Scripts](#npm-and-npm-scripts)
 - [Cool Tools](#cool-tools)
 
 
@@ -98,7 +98,7 @@ CSS Grid, like Flexbox, allows us to very easily make changes in a website layou
 
 ## NPM and NPM Scripts
 
-This project relies on the raw power of `npm` (Node Package Manager) to manage dependencies and create build processes. Besides aforementioned `start` script - which runs live-server and compiles sass in parallel, we also have a `build:css` which does the following actions:
+This project relies on the raw power of `npm` (Node Package Manager) to manage dependencies and create build processes. Besides aforementioned `start` script - which runs live-server and compiles SCSS in parallel, we also have a `build:css` which does the following actions:
 
 1. Compiles SASS (SCSS)
 2. Uses PostCSS Autoprefixer feature to apply prefixes for better browser support

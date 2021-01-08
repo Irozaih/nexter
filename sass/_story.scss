@@ -10,22 +10,52 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
-    align-items: center;
+    padding: 6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+
+      grid-template-rows: repeat(5, 1fr);
+    }
   }
 
-  &__img--1 {
-    width: 100%;
-    grid-row: 2 / 6;
-    grid-column: 2 / 6;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+  &__item--1 {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / 6;
+    }
   }
 
-  &__img--2 {
-    width: 115%;
-    grid-row: 4 / 6;
-    grid-column: 4 / 7;
+  &__item--2 {
+    grid-row: 5 / 6;
+    grid-column: 4 / -1;
     z-index: 20;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .2);
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 4 / 5;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--1 {
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+    }
+
+    &--2 {
+      width: 135%;
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, .2);
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+      }
+    }
   }
 
   &__content {
@@ -43,6 +73,10 @@
     display: grid;
     align-content: center;
     justify-items: start;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__text {

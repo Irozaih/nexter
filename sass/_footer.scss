@@ -2,13 +2,17 @@
   background-color: $color-secondary;
   grid-column: full-start / full-end;
   padding: 8rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem;
+  }
 }
 
 .nav {
   list-style: none;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
   align-items: center;
 
@@ -38,4 +42,8 @@
   color: $color-grey-light-2;
   font-size: 1.4rem;
   text-align: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: unset;
+  }
 }

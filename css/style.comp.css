@@ -264,19 +264,19 @@ body {
       grid-column: 1 / -1; } }
   .realtors__list {
     display: grid;
-    grid-template-columns: min-content max-content;
+    grid-template-columns: auto max-content;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center; }
     @media only screen and (max-width: 50rem) {
       .realtors__list {
-        grid-template-columns: repeat(3, min-content max-content); } }
+        grid-template-columns: repeat(3, auto max-content); } }
     @media only screen and (max-width: 37.5rem) {
       .realtors__list {
-        grid-template-columns: min-content max-content; } }
+        grid-template-columns: auto max-content; } }
   .realtors__img {
     display: block;
-    width: 7rem;
+    width: 100%;
     border-radius: 50%; }
   .realtors__sold {
     text-transform: uppercase;

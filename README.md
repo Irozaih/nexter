@@ -52,7 +52,7 @@ CSS Grid Layout is the most powerful layout system available at the moment. It i
 }
 ```
 
-We can see how powerful the CSS Grid is in the Gallery section example. It would be very hard to achieve this exact layout without the use of some JavaScript or libraries like [Masonry](https://masonry.desandro.com/). We can also see the `grid-gap` property in action, which makes the use of margin on child elements obsolete. However powerful the CSS Grid might be, there is always room for improvement. It would be nice if more browsers besides Firefox would adopt [`subgrid` value](https://caniuse.com/?search=subgrid "Can I use subgrid?"), as well as if we could set different row and column gaps, or have `nth` selector for rows and columns. One more thing would be enabling transitions when `grid-column` or `grid-row` values change. I hope that we will see this in the near future.
+We can see how powerful the CSS Grid is in the Gallery section example. It would be very hard to achieve this exact layout without the use of some JavaScript or libraries like [Masonry](https://masonry.desandro.com/). We can also see the `grid-gap` property in action, which makes the use of margin on child elements obsolete. However powerful the CSS Grid might be, there is always room for improvement. It would be nice if more browsers besides Firefox would adopt [`subgrid`](https://caniuse.com/?search=subgrid "Can I use subgrid?") value, as well as if we could set different row and column gaps, or have `nth` selector for rows and columns. One more thing would be enabling transitions when `grid-column` or `grid-row` values change. I hope that we will see these enhancements in the near future.
 
 ![Grid: Gallery section](img/readme/gallery.png "Grid: Gallery section")
 
@@ -116,7 +116,7 @@ Here is the list of some cool tools used throughout this course:
 - [Can I Use](https://caniuse.com/): A tool which provides us with up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
 - [Tiny PNG](https://tinypng.com/): A tool for smart PNG and JPEG compression
 - [Screen To Gif](https://www.screentogif.com/): Screen, webcam and sketch-board recorder with an integrated editor
-
+- [Photopea](https://www.photopea.com/): Free online photoshop :trollface:
 
 ---
 
@@ -124,8 +124,9 @@ Here is the list of some cool tools used throughout this course:
 
 - [X] Create a functional and responsive website navigation
 - [X] Make the page 100% responsive (`< 400px`)
-- [ ] Optimize gifs and images
+- [X] Optimize images
 - [ ] Redesign gallery section for devices with smaller screens
+- [ ] Optimize for Full HD screens and higher 
 
 
 ---
